@@ -12,11 +12,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:ems="10"
-        android:hint="Key"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Key"
+        tools:ignore="Autofill,HardcodedText" />
 
     <EditText
         android:id="@+id/save_value"
@@ -24,21 +25,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Value"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/save_key" />
+        app:layout_constraintTop_toBottomOf="@+id/save_key"
+        android:hint="Value"
+        tools:ignore="Autofill,HardcodedText" />
 
     <Button
         android:id="@+id/save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/save_value" />
+        app:layout_constraintTop_toBottomOf="@+id/save_value"
+        android:text="Save"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/load_key"
@@ -46,30 +49,33 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:ems="10"
-        android:hint="Enter key"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/save_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/save_btn"
+        android:hint="Enter key"
+        tools:ignore="Autofill,HardcodedText" />
 
     <Button
         android:id="@+id/load_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Load"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/load_key" />
+        app:layout_constraintTop_toBottomOf="@+id/load_key"
+        android:text="Load"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/load_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="value"
         app:layout_constraintBottom_toTopOf="@+id/load_key"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="value"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
